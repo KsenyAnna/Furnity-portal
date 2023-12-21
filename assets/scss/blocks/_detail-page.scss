@@ -1,0 +1,10 @@
+.detail-page {    
+    &__date {
+        font-size: rem($font-size-small);
+        line-height: 160%;
+        color: $slate-gray;
+        font-weight: $font-weight-regular;
+
+        margin-bottom: rem(20px);
+    }
+}

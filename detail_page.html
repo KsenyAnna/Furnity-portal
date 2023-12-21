@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детальная страница</title>
+    <link rel="stylesheet" href="./public/css/style.css" type="text/css">
+
+</head>
+<body class="page" data-page>
+
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+ 
+                <div class="header__col header__col--logo">
+                    <div class="logo">
+                        <a href="main_page.html" class="logo__link">
+                            <img class="logo__pic" src="/public/images/icons/logo.png">
+                        </a>
+                    </div>              
+                </div>
+
+                <div class="header__col header__col--search">
+                    <form class="form form--wide">
+                        <div class="form__field">
+                            <div class="form__field-block form__field-block--input">                                       
+                                <div class="input input--small input--buttoned input--search">
+                                    <button type="button" class="button button__icon button--circular input__button input__button--search">
+                                        <svg class="icon button__icon--circular">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-search"></use>
+                                        </svg>
+                                    </button>                                
+                                    <input  type="text" name="text5" id="text5" class="input__control" placeholder="Найти...">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header__col header__col--profile">
+                    <div class="profile profile--hidden">
+                        <a href="detail_page.html" class="profile__link"></a>
+                        <div class="profile__block"> 
+                            <span class="profile__name">Екатерина</span>
+                            <div class="profile__avatar">
+                                <img class="profile__avatar-pic" src="/public/images/foto.jpg">
+                            </div>
+                        </div>
+                        <div class="profile__icon">
+                            <svg class="profile__icon-pic icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-person"></use>
+                            </svg>                                               
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="page-with-menu page__content page__content--modification">
+        <div class="page-with-menu__button" >
+            <button type="button" class="button button--transparent button--covered button--iconed button--left" data-open-menu>
+                <span class="button__text button__text--transparent">Меню раздела</span>
+                <span class="button__icon button__icon">
+                    <svg class="icon button__icon-pic">
+                        <use xlink:href="public/images/icons/sprite.svg#icon-menu"></use>
+                    </svg>
+                </span>
+            </button>       
+        </div>
+        <div class="container page-with-menu__container background">
+
+            <div class="background__sidebar" data-background></div>
+            <nav class="page-with-menu__menu list-menu" data-menu>
+                <div class="list-menu__title list-menu__title--desktop">
+                    <span class="list-menu__text">Меню раздела</span>
+                    <button type="button" class="list-menu__button button button__icon button--circular" data-close-menu>
+                        <svg class="list-menu__button-pic icon button__icon--circular">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="list-menu__items">
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Избранное</span>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Моя компания</span>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Моё развитие</span>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Новости компании</span> 
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Телефонная книга</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="page-with-menu__content">
+                <nav class="page-with-menu__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Тут</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link">Будут</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Хлебные</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Крошки</a>
+                        </li>
+                        <li class="breadcrumbs__item breadcrumbs__item--active">
+                            <a class="breadcrumbs__link">В две строки</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="page-with-menu__title title--h1">Заголовок страницы</h1>
+
+                <main class="page-with-menu__main detail-page">
+                    <div class="detail-page__date">
+                        <data value="value_name">4 августа 2019</data>                        
+                    </div>
+                    <h2>Заголовок новости</h2>
+                    <p>Проснувшись однажды утром после беспокойного сна, <a href="#">Грегор Замза</a> обнаружил, что он у себя в постели превратился в страшное насекомое.</p>
+                    <img src="public/images/big-image.jpg" alt="Картинка">
+                    <p>Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот</p>
+                    <ul>
+                        <li>На верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+                            <ul>
+                                <li>На верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</li>
+                                <li>Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами</li>
+                                <li>«Что со мной случилось?» – подумал он.</li>
+                            </ul>
+                        </li>
+                        <li>Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами</li>
+                        <li>«Что со мной случилось?» – подумал он.</li>
+                    </ul>
+                    <p>Это не было сном. <a href="#">Его комната</a>, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку.</p>
+                    <blockquote>На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука.</blockquote>
+                    <p>Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. </p>
+                    <ol>
+                        <li>«Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он
+                            <ol>
+                                <li>но это было совершенно <a href="#">неосуществимо</a></li>
+                                <li>он привык спать на правом боку</li>
+                                <li>а в теперешнем своем состоянии он никак не мог принять этого положения.</li>
+                            </ol>
+                        </li>
+                        <li>С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину.</li>
+                        <li>Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую боль в боку.</li>
+                    </ol>
+                    <h3>Заголовок третьего уровня</h3>
+                    <p>«Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! Изо дня в день в разъездах. Деловых волнений куда больше, чем на месте, в <a href="#">торговом доме</a>, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов, мирись с плохим, нерегулярным питанием, завязывай со все новыми и новыми людьми недолгие, никогда не бывающие сердечными отношения. Черт бы побрал все эт</p>
+
+                </main>
+            </section>      
+        </div>
+    </div>
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__row">
+
+                <div class="footer__col footer__col--social">
+                    <div class="footer__social social"> 
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://www.youtube.com/" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-you-tube"></use>
+                                    </svg>                                    
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>                                    
+                                </a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--menu"> 
+                    <div class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--logotip"> 
+                    <div class="footer__logotip logotip">
+                        <a href="main_page.html" class="logotip__icon">   
+                            <img class="logotip__icon-pic" src="/public/images/icons/logo.png">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/public/js/script.js"></script>
+</body>
+</html>

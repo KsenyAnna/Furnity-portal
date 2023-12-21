@@ -1,0 +1,143 @@
+//стилизация тэгов
+//по стр админки
+* {
+    @include all-document;
+}
+html {
+    @include html;
+}
+
+body {
+    @include body;
+}
+
+h1 {
+    @include title; 
+
+    font-size: rem($font-size-large);
+    line-height: $line-height-percent-huge;
+
+    &:not([class]) {
+        margin-bottom: rem(30px);        
+    }
+    
+    @media #{$screen-tablet} {
+        &:not([class]) {
+        font-size: rem($font-size-huge);
+        }
+    }  
+    @media #{$screen-desktop} {
+        &:not([class]) {
+            margin-bottom: rem(40px);        
+        }
+    }    
+}
+
+h2 {
+    @include title;
+
+    font-size: rem($font-size-medium);
+    line-height: $line-height-percent-medium;
+
+    &:not([class]) {
+        margin-bottom: rem(20px);        
+    }
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-large);
+    }
+}
+
+h3 {
+    @include title;
+
+    line-height: $line-height-percent-medium;
+
+    &:not([class]) {
+        margin-bottom: rem(20px);        
+    }
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-medium);
+    }
+}
+
+p {
+    line-height: $line-height-percent-large;
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-regular;
+
+    margin: 0;
+    padding: 0;
+
+    &:not([class]) {
+        margin-bottom: rem(10px);
+    }
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-small;
+    }
+}
+
+ol {
+    @include ol;
+
+    margin: 0;  
+    padding: 0;
+    
+    list-style: none;
+
+    li {
+        box-sizing: border box;
+    }
+
+    &:not([class]) {
+        padding-left: rem(20px);
+        
+        ol {
+            padding-left: rem(20px);
+        }
+    }
+}
+
+ul {    
+    @include ul;
+    
+    margin: 0;  
+    padding: 0;
+
+    list-style: none;
+
+    li {
+        box-sizing: border box;
+    }
+
+    &:not([class]) {
+        padding-left: rem(20px);
+
+        ul {
+            padding-left: rem(20px);
+        }
+    }
+}
+
+blockquote {
+    @include blockquote;
+
+    &:not([class]) {
+        margin-bottom: rem(20px);
+        margin-top: rem(10px);
+    }
+}
+
+a { 
+    @include href; 
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-small;
+    }
+}
+
+img{
+   @include img;
+}

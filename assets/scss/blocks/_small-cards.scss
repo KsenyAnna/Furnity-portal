@@ -1,0 +1,25 @@
+.small-cards {
+    &__list {
+        width: 100%;
+        height: rem(150px);
+
+        overflow: hidden;
+    }
+
+    &__item {
+        display: inline-block;
+
+        width: rem(282px);
+        height: 100%;
+
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-right: rem(30px);
+
+            @media #{$screen-desktop} {
+                margin-right: rem(32px);
+            }    
+        }
+    }
+} 

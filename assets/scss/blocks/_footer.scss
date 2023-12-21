@@ -1,0 +1,95 @@
+.footer {
+    width: 100%;    
+    min-height: rem(80px);
+
+    background-color: $white;
+
+    &__row {
+        background-color: $white;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;   
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        @media #{$screen-tablet} {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__col {
+        width: 100%;
+
+        padding: rem(20px) 0;
+
+        @media #{$screen-tablet} { 
+            &:not(:last-child) {
+                padding-left: 0;
+                padding-right: rem(40px);
+                padding-top: rem(31px);
+                padding-bottom: rem(31px);
+            }
+        }
+
+        @media #{$screen-desktop} {  
+            &:not(:last-child) {
+                padding-left: 0;
+                padding-right: rem(80px);
+            }
+        }
+
+        &--social {
+            position: relative;
+            border-bottom: rem(1px) solid $heather;            
+
+            @media #{$screen-tablet} {
+                width: auto;
+                
+                border-bottom: 0;
+            }
+
+            @media #{$screen-desktop} {
+                &::after {
+                    position: absolute;
+
+                    display: block;
+
+                    content: "";
+
+                    width: rem(1px);
+                    height: rem(40px);
+
+                    right: rem(40px);
+                    top: 50%;
+
+                    transform: translateY(-50%);
+                    background-color: $heather;
+                }
+            }            
+        }
+
+        &--menu {
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            border-bottom: rem(1px) solid $heather;
+
+            @media #{$screen-tablet} {
+                width: auto;
+
+                border-bottom: 0;
+            }
+        }
+
+        &--logotip {
+            @media #{$screen-tablet} {
+                width: auto;
+            }
+        }
+    }  
+}

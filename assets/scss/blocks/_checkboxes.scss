@@ -1,0 +1,10 @@
+.checkboxes {
+    &__item {
+        font-size: rem($font-size-tiny);
+
+        height: 100%;
+        &:not(:last-child) {
+            margin-bottom: rem(20px);
+        }
+    }
+}

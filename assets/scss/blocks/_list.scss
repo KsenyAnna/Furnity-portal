@@ -1,0 +1,54 @@
+.list {
+    font-size: rem($font-size-base);
+
+    li {
+        margin: rem(10px) 0;
+    }
+
+    &--numbered {
+        @include ol;
+
+        padding-left: rem(20px);
+        
+        & > li {
+            &:before {
+                content: counter(my-counter) ".";
+                counter-increment: my-counter;
+                color: $cerise-red;
+                padding-right: 5px;
+                }
+                & > ol {
+                    counter-reset: my-sub-counter;
+                    & > li {
+                        &::before {
+                        content: counter(my-counter)"."counter(my-sub-counter);
+                        counter-increment: my-sub-counter;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        } 
+
+        ol {
+            padding-left: rem(20px);
+        }
+    }
+
+    &--unnumbered {
+        @include ul;
+
+        padding-left: rem(20px);
+
+        li:before {
+            content: "•";
+            
+            color: $cerise-red;         
+
+            padding-right: rem(10px);   
+        }
+                
+        ul {
+            padding-left: rem(20px);
+        }
+    }
+}

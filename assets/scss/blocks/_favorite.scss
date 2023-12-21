@@ -1,0 +1,42 @@
+.favorite {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    z-index: $z-index-aside-block;
+
+    width: rem(35px);
+    height: rem(35px);
+
+    background-color: $white;
+
+    border-radius: 0 0 0 rem(8px);
+          
+    &:hover & {
+        &__star {
+            display: none;
+        }
+
+        &__star-fill {
+            display: block;
+        }
+    }
+    
+    &__star {
+        @include center;    
+
+        height: rem(24px);
+        width: rem(24px);
+
+        color: $curious-blue;    
+    }
+
+    &__star-fill {
+        display: none;
+    }
+
+    &__activity {
+        display: none;
+    }
+}

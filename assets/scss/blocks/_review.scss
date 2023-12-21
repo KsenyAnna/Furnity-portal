@@ -1,0 +1,203 @@
+.review {
+    position: relative;
+    
+    padding: rem(20px);
+
+    background-color: $white;
+
+    box-shadow: 0 rem(4px) rem(12px) 0 rgba($black, .1);
+    margin: rem(15px) 0;
+
+    border-radius: rem(24px);
+
+    @media #{$screen-desktop} {
+        padding: rem(30px);
+    }
+
+    &--slide {
+        max-width: rem(288px);
+        height: rem(250px);
+
+        @media #{$screen-tablet} {
+            max-width: rem(340px);            
+        }
+        
+        @media #{$screen-desktop} {
+            max-width: rem(580px);           
+            height: rem(320px);         
+        }
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;        
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__user-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: rem(11px);
+
+        @media #{$screen-tablet} {            
+            margin-bottom: rem(15px);
+        }
+
+        @media #{$screen-desktop} {
+            margin-bottom: rem(20px);
+        }
+    }
+
+    &__foto {
+        margin-right: rem(10px);
+        
+        @media #{$screen-tablet} {
+            margin-right: rem(15px);
+        }
+
+        @media #{$screen-desktop} {
+            margin-right: rem(20px);
+        }
+
+        &-pic {
+            width: rem(36px);
+            height: rem(36px);
+            
+            border-radius: 50%;
+
+            @media #{$screen-tablet} {
+                width: rem(48px);
+                height: rem(48px);
+            }
+
+            @media #{$screen-desktop} {
+                width: rem(64px);
+                height: rem(64px);
+            }    
+        }
+    }
+
+    &__title {
+        max-height: rem(40px);
+        overflow: hidden;
+
+        @media #{$screen-tablet} {            
+            max-height: rem(48px);
+        }
+
+        @media #{$screen-desktop} {
+            max-height: rem(64px);
+        }
+
+        &-name {
+            font-family: $font-family;
+            font-size: rem($font-size-tiny);
+            font-weight: $font-weight-medium;
+            line-height: 140%;    
+
+            color: $tiber;
+
+            @media #{$screen-tablet} {
+                font-size: rem($font-size-small);
+            }
+
+            @media #{$screen-desktop} {
+                font-size: rem($font-size-medium);
+            }    
+        }
+    }
+    
+    &__date {
+        &-text {
+            font-family: $font-family;
+            font-size: rem(10px);
+            font-weight: $font-weight-medium;
+            line-height: $line-height-percent-big;
+
+            color: rgba($daintree, .35);
+
+            @media #{$screen-tablet} {
+                font-size: rem(11px);
+            }
+
+            @media #{$screen-desktop} {
+                font-size: rem($font-size-tiny);
+            }    
+        }
+    }
+
+    &__content {
+        margin-bottom: rem(20px);
+
+        height: rem(123px);
+
+        @media #{$screen-tablet} {
+            height: rem(112px);
+        }
+
+        @media #{$screen-desktop} {
+            height: rem(132px);
+        }    
+    }
+
+    &__text {
+        @include hidden-text;
+        -webkit-line-clamp: 8;
+
+        font-family: $font-family;
+        font-size: rem(11px);
+        font-weight: $font-weight-medium;
+        line-height: 140%;
+
+        color: rgba($salt-box, .8);
+
+        @media #{$screen-tablet} {
+            -webkit-line-clamp: 7;
+
+            font-size: rem($font-size-miniature);
+            line-height: rem(16px);
+
+            color: $salt-box;
+        }
+
+        @media #{$screen-desktop} {
+            -webkit-line-clamp: 6;
+
+            font-size: rem($font-size-tiny);
+            line-height: rem(22px);
+            padding-left: rem(10px);
+        }
+    }    
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        max-height: rem(20px);
+        overflow: hidden;
+        
+        &-pic {
+            width: fit-content;
+            height: rem(16px);
+
+            @media #{$screen-tablet} {
+                height: rem(20px);
+            }
+            
+            @media #{$screen-desktop} {
+                height: rem(24px);
+            } 
+        }        
+    }
+}

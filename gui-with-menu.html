@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГУИ с меню</title>
+    <link rel="stylesheet" href="./public/css/style.css" type="text/css">
+
+</head>
+<body class="page" data-page>
+
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+ 
+                <div class="header__col header__col--logo">
+                    <div class="logo">
+                        <a href="main_page.html" class="logo__link">
+                            <img class="logo__pic" src="/public/images/icons/logo.png">
+                        </a>
+                    </div>              
+                </div>
+
+                <div class="header__col header__col--search">
+                    <form class="form form--wide">
+                        <div class="form__field">
+                            <div class="form__field-block form__field-block--input">                                       
+                                <div class="input input--small input--buttoned input--search">
+                                    <button type="button" class="button button__icon button--circular input__button input__button--search">
+                                        <svg class="icon button__icon--circular">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-search"></use>
+                                        </svg>
+                                    </button>                                
+                                    <input  type="text" name="text5" id="text5" class="input__control" placeholder="Найти...">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header__col header__col--profile">
+                    <div class="profile profile--hidden">
+                        <a href="detail_page.html" class="profile__link"></a>
+                        <div class="profile__block"> 
+                            <span class="profile__name">Екатерина</span>
+                            <div class="profile__avatar">
+                                <img class="profile__avatar-pic" src="/public/images/foto.jpg">
+                            </div>
+                        </div>
+                        <div class="profile__icon">
+                            <svg class="profile__icon-pic icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-person"></use>
+                            </svg>                                               
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="page-with-menu page__content page__content--modification">
+        <div class="page-with-menu__button" >
+            <button type="button" class="button button--transparent button--covered button--iconed button--left" data-open-menu>
+                <span class="button__text button__text--transparent">Меню раздела</span>
+                <span class="button__icon button__icon">
+                    <svg class="icon button__icon-pic">
+                        <use xlink:href="public/images/icons/sprite.svg#icon-menu"></use>
+                    </svg>
+                </span>
+            </button>       
+        </div>
+        <div class="container page-with-menu__container background">
+
+            <div class="background__sidebar" data-background></div>
+            <nav class="page-with-menu__menu list-menu" data-menu>
+                <div class="list-menu__title list-menu__title--desktop">
+                    <span class="list-menu__text">Меню раздела</span>
+                    <button type="button" class="list-menu__button button button__icon button--circular" data-close-menu>
+                        <svg class="list-menu__button-pic icon button__icon--circular">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="list-menu__items">
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Избранное</span>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Моя компания</span>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Моё развитие</span>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Новости компании</span> 
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__link"></a>
+                        <span class="list-menu__item--text">Телефонная книга</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="page-with-menu__content">
+                <nav class="page-with-menu__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Тут</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link">Будут</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Хлебные</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Крошки</a>
+                        </li>
+                        <li class="breadcrumbs__item breadcrumbs__item--active">
+                            <a class="breadcrumbs__link">В две строки</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="page-with-menu__title title--h1">Заголовок страницы</h1>
+
+                <main class="page-with-menu__main">
+                    Контент
+                </main>
+            </section>      
+        </div>
+    </div>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__row">
+
+                <div class="footer__col footer__col--social">
+                    <div class="footer__social social"> 
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://www.youtube.com/" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-you-tube"></use>
+                                    </svg>                                    
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>                                    
+                                </a>
+                            </li>                      
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--menu">
+                    <div class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--logotip"> 
+                    <div class="footer__logotip logotip">
+                        <a href="main_page.html" class="logotip__icon">   
+                            <img class="logotip__icon-pic" src="/public/images/icons/logo.png">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/public/js/script.js"></script>
+</body>
+</html>

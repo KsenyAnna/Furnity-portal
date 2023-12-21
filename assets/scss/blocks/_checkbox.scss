@@ -1,0 +1,69 @@
+.checkbox {
+    &__input {
+        @include hidden-element;
+    }
+
+    &__input:checked + &__label & {
+        &__icon {
+            background-color: $curious-blue;
+        }
+    }
+    
+    &__input:disabled + &__label & {
+        &__icon {
+            border-color: $heather;
+            background-color: $athens-gray;
+            &-pic {
+                color: $athens-gray;
+            }
+        }
+    }
+
+    &__input:disabled + &__label {
+            cursor: default;
+    }
+
+    &__input:disabled:checked + &__label & {
+        &__icon-pic {
+            color: $heather;                
+        }
+    }
+
+    &__label {
+        display: inline-flex;
+        align-items: flex-start;
+
+        cursor: pointer;
+    }
+
+    &__icon {
+        $size: 20px;
+
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        justify-content: center;
+
+        width: rem($size);
+        height: rem($size);
+        margin-right: rem(8px);
+
+        transition: color $transition-duration $transition-function,
+        border-color $transition-duration $transition-function,
+        background-color $transition-duration $transition-function;
+
+        color: transparent;
+        border: rem(1px) solid $curious-blue;
+        border-radius: rem($border-radius-mini);
+        background-color: $white;
+
+        &-pic {
+            position: absolute;
+            width: rem(11px);
+
+            color: $white;
+        }
+    }
+}

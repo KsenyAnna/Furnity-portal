@@ -1,0 +1,227 @@
+.button {
+    min-width: 0;
+    height: rem($size-normal);
+    padding: 0 rem(30px);
+
+    cursor: pointer;
+    transition: color $transition-duration $transition-function,
+                border-color $transition-duration $transition-function,
+                background-color $transition-duration $transition-function;
+    text-decoration: none;   
+    
+    color: $white;
+
+    border: 0;
+    border-radius: $border-radius-medium;
+
+    &:focus {
+        border-color: $slate-gray;
+        outline: none;
+    }
+
+    &--small {
+        height: rem($size-small);
+    }
+
+    &--medium {
+        height: rem($size-medium);
+    }    
+
+    &--square {
+        border-radius: 0;
+    }
+
+    &--squared { 
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }    
+
+    &--circular {
+        padding: 0;
+
+        border-radius: 50%;
+    }    
+
+    &--circular#{&}--mini {
+        width: rem($size-mini);    
+    }   
+
+    &--simple {
+        height: auto;
+        padding: 0;
+
+        border: 0;
+        background: transparent;
+
+        color: $bunker;
+    }
+
+    &--simple#{&}--blue {
+        color: $curious-blue;
+    }
+
+    &--simple#{&}--gray {
+        color: $slate-gray;
+    }
+
+    &--covered {        
+        border: 0;
+    }
+
+    &--covered#{&}--blue{
+        background-color: $curious-blue;
+
+        &:hover {
+            background-color: $wild-blue-yonder;
+        }
+
+        &:focus {
+            background-color: rgba($wild-blue-yonder, .5);
+            border: none;
+        }
+    }
+
+    &--covered#{&}--red-white {
+        color: $bunker;
+        background-color: $white;
+
+        &:hover {
+            color: $cerise-red;
+            background-color: $white;
+    
+        }
+    }
+
+    &--covered#{&}--gray{
+        background-color: $slate-gray;
+
+        &:hover {
+            color: $wild-blue-yonder;
+        }
+
+        &:focus {
+            color: rgba($wild-blue-yonder, .5);
+            border-color: $slate-gray;
+            outline: none;
+        }
+    }
+
+    &--covered#{&}--disabled {
+        background-color: $athens-gray;
+
+        &:hover,
+        &:focus {
+            background-color: $athens-gray;
+            border-color: $slate-gray;
+            outline: none;
+        }
+    } 
+
+    &--iconed {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+    }
+
+    &--iconed#{&}--right & {
+        &__icon-pic {
+            transform: rotate(180deg);
+        }
+    }
+
+    &--iconed#{&}--left {
+        flex-direction: row-reverse;
+    }
+
+    &--simple#{&}--right {
+        height: rem(16px);
+
+        font-size: rem($font-size-miniature);
+        font-weight: $font-weight-medium;
+        line-height: rem(16px);
+        color: $salt-box;
+    }
+
+    &--simple#{&}--right &{
+        &__text {
+            margin-right: rem(8px);
+        }
+        &__icon {
+            display: flex;
+            align-items: center;
+            
+            height: auto;
+            width: auto;
+        }
+        &__icon-pic {
+            width: rem(12px);
+            height: rem(12px);            
+
+            color: $brick-red;
+            transform: rotate(0deg);
+            margin: 0;
+        }
+    }
+
+    &__text {
+        font-size: rem($font-size-tiny);
+        font-weight: $font-weight-medium;
+        line-height: $line-height-percent-medium;    
+
+        &--transparent {
+            font-weight: $font-weight-medium;
+        }
+    }
+
+    &__item {
+        margin: rem(15px);
+    }
+    
+    &__icon {
+        height: 24px;
+        width: 24px;
+
+        color: $slate-gray;
+        background-color: transparent;
+
+        &-pic {
+            height: rem(15px);
+            width: rem(15px);
+
+            color: $white;
+
+            margin: rem(5px);           
+        }
+
+        &--circular {
+            height: rem(16px);
+            width: rem(16px);
+
+            margin: rem(4px);               
+        }
+    }
+
+    &--transparent {
+        background-color: transparent;
+        color: $curious-blue;
+    }
+
+    &--transparent & {
+        &__icon {
+            height: rem(24px);
+            width: rem(24px);
+
+            margin-right: rem(10px);
+        }
+        
+        &__icon-pic {
+            height: 100%;
+            width: 100%;
+
+            margin: 0;
+
+            color: $curious-blue;
+        }
+    }
+}

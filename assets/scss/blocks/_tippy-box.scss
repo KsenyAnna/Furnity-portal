@@ -1,0 +1,24 @@
+.tippy-box[data-theme~='favorite'] {
+    display: none; 
+
+    font-size: rem($font-size-miniature);
+    line-height: rem(16px);
+    font-weight: $font-weight-medium;
+    letter-spacing: rem(0.24px);
+
+    color: $tuna;
+
+    background-color: $white;
+
+    box-shadow: 0px rem(4px) rem(16px) rgba($black, .24);
+
+    transition: $transition-duration $transition-function;
+
+    @media #{$screen-tablet} {
+        display: block;
+    }
+
+    .tippy-content {
+        padding: rem(8px) rem(12px);
+    }
+}

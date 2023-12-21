@@ -1,0 +1,59 @@
+.editing-profile {
+    margin-bottom: rem(160px);
+
+    @media #{$screen-tablet} {
+        margin-bottom: rem(190px);
+    }
+
+    &__block {
+        width: 100%;
+
+        margin-bottom: rem(50px);
+    }
+
+    &__title {
+        margin-bottom: rem(11px);
+
+        &--modified {
+            margin-bottom: rem(20px);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        width: 100%;
+
+        @media #{$screen-tablet} {
+            max-width: rem(335px);
+        }
+        &:not(:last-child) {
+            margin-bottom: rem(21px);            
+        }
+
+        &--wide {
+            max-width: 100%;
+        }
+
+        &--modified {
+            margin-bottom: rem(11px);
+        }
+    }
+
+    &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        margin: 0;
+    }
+
+    &__button {
+        &:not(:last-child) {
+            margin-right: rem(22px);
+        }
+    }
+}

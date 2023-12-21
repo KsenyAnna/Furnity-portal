@@ -1,0 +1,52 @@
+.activity {
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    &__item {
+        position: relative;
+
+        padding: 0 rem(6.5px);
+
+        overflow: hidden;
+
+        &:first-child {
+            padding-left: 0;
+
+            &::before {
+                background: none;
+            }
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 50%;
+
+            width: rem(1px);
+            height: rem(10px);
+
+            transform: translateY(-50%);
+
+            content: "";        
+
+            background-color: $heather;
+        }
+
+        &::before {
+            left: 0;            
+        }
+
+        &::after {
+            right: rem(-1px);
+        }
+    }
+}

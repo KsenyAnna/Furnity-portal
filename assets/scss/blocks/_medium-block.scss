@@ -1,0 +1,38 @@
+.medium-block {
+    width: 100%;
+
+    overflow: hidden;
+
+    @media #{$screen-tablet} {
+        width: rem(600px);
+    }
+
+    @media #{$screen-desktop} {
+        width: rem(621px);
+    }
+
+    &__title {
+        margin-bottom: rem(10px);
+    }
+
+    &__texts {
+        margin-bottom: rem(10px);
+    }
+
+    &__text-more {
+        display: none;    
+        margin-top: rem(11px);
+    }
+
+    &__name--hide {
+        display: none;
+    }
+
+    &__icon {
+        transform: rotate(0deg) ;
+    }
+
+    &__icon--opened {
+        transform: rotate(180deg) !important;
+    }
+}

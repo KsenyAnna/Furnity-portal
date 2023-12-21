@@ -1,0 +1,43 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    &__header {
+        position: fixed;
+        z-index: $z-index-header; 
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-shrink: 0; 
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        margin-top: rem($height-header-mobile); 
+        padding-top: rem(40px);
+        padding-bottom: rem(100px);
+
+        @media #{$screen-tablet} {
+            margin-top: rem($height-header-desktop);
+            padding-top: rem(50px);
+        }
+        
+        &--modification {
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &--block-scroll {
+        overflow: hidden;
+    }
+
+    &__footer {        
+        flex-shrink: 0; 
+    }
+}

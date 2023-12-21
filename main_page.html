@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./public/css/style.css" type="text/css">
+
+</head>
+<body class="page">
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+ 
+                <div class="header__col header__col--logo">
+                    <div class="logo">
+                        <a href="main_page.html" class="logo__link">
+                            <img class="logo__pic" src="/public/images/icons/logo.png">
+                        </a>
+                    </div>              
+                </div>
+
+                <div class="header__col header__col--search">
+                    <form class="form form--wide">
+                        <div class="form__field">
+                            <div class="form__field-block form__field-block--input">                                       
+                                <div class="input input--small input--buttoned input--search">
+                                    <button type="button" class="button button__icon button--circular input__button input__button--search">
+                                        <svg class="icon button__icon--circular">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-search"></use>
+                                        </svg>
+                                    </button>                                
+                                    <input  type="text" name="text5" id="text5" class="input__control" placeholder="Найти...">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header__col header__col--profile">
+                    <div class="profile profile--hidden">
+                        <a href="detail_page.html" class="profile__link"></a>
+                        <div class="profile__block"> 
+                            <span class="profile__name">Екатерина</span>
+                            <div class="profile__avatar">
+                                <img class="profile__avatar-pic" src="/public/images/foto.jpg">
+                            </div>
+                        </div>
+                        <div class="profile__icon">
+                            <svg class="profile__icon-pic icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-person"></use>
+                            </svg>                                               
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="main-page">
+        <main class="page__content content">
+            <section class="main-page__slider">
+                <div class="info-cards">
+                    <div class="info-cards__slider slider">
+                        <div class="slider__box" data-carousel="pagination">
+                            <div class="swiper-container" data-carousel-container>
+                                <ul class="info-cards__list swiper-wrapper">
+                                    <li class="info-cards__item swiper-slide">
+    
+                                        <article class="small-card small-card--slide">
+                                            <div class="small-card__titles">
+                                                <div class="small-card__title">Важное уведомление Важное уведомление</div>                                    
+                                                <svg class="icon small-card__icon small-card__icon-warning">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-warn"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="small-card__text text--medium">Удаленная работа. Инструкция для сотрудников о том как защитить себя от корон... Удаленная работа Инструкция для сотрудников о том как защитить себя от корон...</div>
+                                            <div class="small-card__button">
+                                                <button type="button" class="button button--small button--covered button--blue button--squared">
+                                                    <span class="button__text">Подробнее</span>
+                                                </button>
+                                            </div>
+                                        </article>                                     
+                                    </li>
+                                    <li class="info-cards__item swiper-slide">
+                                        <article class="small-card small-card--slide">
+                                            <div class="small-card__titles">
+                                                <div class="small-card__title">Вопрос дня</div>                                    
+                                                <svg class="icon small-card__icon small-card__icon-question">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-question"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="small-card__text">Вы адекватный?</div>
+                                            <div class="small-card__button">
+                                                <button type="button" class="button button--small button--covered button--blue button--squared">
+                                                    <span class="button__text">Да</span>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="info-cards__item swiper-slide">
+                                        <article class="small-card small-card--slide">
+                                            <div class="small-card__titles">
+                                                <div class="small-card__title">Технические работы</div> 
+                                                <svg class="icon  small-card__icon small-card__icon-info">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-info"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="small-card__text">Портал будет недоступен 14.08.2021 с 10:00 до 19:00</div>
+                                            <div class="small-card__button">
+                                                <button type="button" class="button button--small button--covered button--blue button--squared">
+                                                    <span class="button__text">Ясно-понятно</span>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="info-cards__item swiper-slide">
+                                        <article class="small-card small-card--slide">
+                                            <div class="small-card__titles">
+                                                <div class="small-card__title">Опрос недели</div>                                    
+                                                <svg class="icon small-card__icon small-card__icon-question">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-question"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="small-card__text">Какую книгу вы больше всего любили, когда были маленьким?</div>
+                                            <div class="small-card__button">
+                                                <button type="button" class="button button--small button--covered button--blue button--squared">
+                                                    <span class="button__text">Пройти опрос</span>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="info-cards__item swiper-slide">
+                                        <article class="small-card small-card--slide">
+                                            <div class="small-card__titles">
+                                                <div class="small-card__title">Опрос недели</div>                                    
+                                                <svg class="icon small-card__icon small-card__icon-question">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-question"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="small-card__text">Какую книгу вы больше всего любили, когда были маленьким?</div>
+                                            <div class="small-card__button">
+                                                <button type="button" class="button button--small button--covered button--blue button--squared">
+                                                    <span class="button__text">Пройти опрос</span>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>                           
+                                <div class="swiper-pagination slider__pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                
+                <section class="main-page__title">
+                    <h1 class="title title--h1">Заголовок</h1>
+                </section>
+                <section class="main-page__block">
+                    <article class="medium-block" data-uncover>
+                        <div class="medium-block__title title--h3">Ведущий web-интегратор</div>
+                        <div class="medium-block__texts">
+                            <p class="medium-block__text text--medium">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.<p>
+                            <p class="medium-block__text medium-block__text-more  text--medium" data-uncover-content>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</p>
+                        </div>
+                        <button type="button" class="medium-block__button button button--simple button--iconed button--right" data-uncover-toggle>
+                            <span class="medium-block__name button__text"  data-uncover-name>Показать еще</span>
+                            <span class="medium-block__name medium-block__name--hide button__text"  data-uncover-hide>Скрыть</span>
+                            <span class="medium-block__icon button__icon">
+                                <svg class="icon button__icon-pic medium-block__icon" data-uncover-icon>
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-down-red"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </article>
+                </section>
+                <section class="main-page__sections">
+                    <div class="tabs tabs--red" data-tabs>
+                        <nav class="tabs__items">
+                            <ul class="tabs__list">
+                                <li class="tabs__item tabs__item--active" data-tab="news">
+                                    Новости
+                                </li>
+                                <li class="tabs__item" data-tab="sale">
+                                    Акции
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="tabs__body">
+                            <div class="tabs__block tabs__block--active" data-tab-section="news">                            
+                                <div class="cards">
+                                    <ul class="cards__list">        
+                                        <li class="cards__item">                                                          
+                                            <article class="card">                                    
+                                                <a href="#" class="card__link"></a>                                                                                        
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img src="/public/images/big-image.jpg" class="card__image-pic">
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">Результаты за 3-й квартал и 9 месяцев 2019 года. В заголовке не должно быть больше двух строк. Если больше, текст 3-й квартал и 9 месяцев 2019 года. В заголовке не должно быть больше двух строк. Если больше, текст                                        
+                                                        </div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray">Не усложняйте себе жизнь, перемещаясь по палитре цветов верх и вниз, чтобы создавать различные оттенки черного тек...В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</div>  
+                                                    </div>    
+                                                    <div class="card__info info">
+                                                        <span class="info__text text--bottom-block card__texts">
+                                                            04.02.2020
+                                                        </span>
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>
+                                        <li class="cards__item">                                                          
+                                            <article class="card">                                    
+                                                <a href="#" class="card__link"></a>                                                                                        
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img src="/public/images/small-image.jpg" class="card__image-pic">
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">Заголовок                                        
+                                                        </div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray">Сообщество “Мы – Землекопы” добавило файл excavator.jpg</div>  
+                                                    </div>    
+                                                    <div class="card__info info">
+                                                        <span class="info__text text--bottom-block card__texts">
+                                                            04.02.2020
+                                                        </span>
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>
+                                        <li class="cards__item">                                                          
+                                            <article class="card">                                    
+                                                <a href="#" class="card__link"></a>                                                                                        
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img src="" class="card__image-pic">
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">
+                                                        </div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray"></div>  
+                                                    </div>    
+                                                    <div class="card__info info">
+                                                        <span class="info__text text--bottom-block card__texts">
+                                                            04.02.2020
+                                                        </span>
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>
+                                        <li class="cards__item cards__item--big">                                         
+                                            <article class="card  card--big">                                    
+                                                <a href="#" class="card__link"></a>                                                                                          
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img src="/public/images/news/3.jpg" class="card__image-pic">
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">Оранжевое кресло опустело</div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray">Табличку можно определить как физически прочный, надёжный носитель письменной информации, относительно удобный в повседневном использовании и транспортировке. Пишущим средством в этом случае, как правило, выступало стило. Можно выделить два основных типа табличек: гл...</div>  
+                                                    </div>    
+                                                    <div class="card__info info">
+                                                        <span class="info__text text--bottom-block card__texts">
+                                                            04.02.2020
+                                                        </span>
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>
+                                        <li class="cards__item">                                                          
+                                            <article class="card">                                    
+                                                <a href="#" class="card__link"></a>                                                                                           
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img src="/public/images/news/5.jpg" class="card__image-pic">
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">Спасите леса от вырубки                                        
+                                                        </div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray">Не усложняйте себе жизнь, перемещаясь по палитре цветов верх и вниз, чтобы создавать различные оттенки черного тек...
+                                                        </div>    
+                                                    <div class="card__info info">
+                                                        <span class="info__text text--bottom-block">
+                                                            04.02.2020
+                                                        </span>
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs__block" data-tab-section="sale">                            
+                                <div class="cards">
+                                    <ul class="cards__list">
+                                        <li class="cards__item cards__item--wide">  
+                                            <article class="card card--wide card--wide-right"> 
+                                                <a href="#" class="card__link"></a>                                                                                           
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill "></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img class="card__image-pic" src="/public/images/actions/1.jpg">
+                
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__activity activity">
+                                                        <ul class="activity__list">
+                                                            <li class="activity__item  text--blue">Йога</li>
+                                                            <li class="activity__item  text--blue">Студия Йогаджой</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">Занятия хатха йогой в центре Москвы                                        
+                                                        </div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой к...</div>  
+                                                    </div>    
+                
+                                                    <div class="card__info info"> 
+                                                        <div class="info__texts">
+                                                            <span class="info__text info__date text--bottom-block card__texts">
+                                                                04.02.2020</span>
+                                                            <span class="info__text info__post-text text--bottom-block card__texts">
+                                                                Предложение активно
+                                                            </span>
+                                                        </div>            
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>
+                                        <li class="cards__item cards__item--wide">                                                          
+                                            <article class="card card--wide">                                    
+                                                <a href="#" class="card__link"></a>                                                                                    
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img class="card__image-pic" src="/public/images/actions/2.jpg">                                        
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__activity activity">
+                                                        <ul class="activity__list">
+                                                            <li class="activity__item  text--blue">Транспорт</li>
+                                                            <li class="activity__item  text--blue">Такси Арама</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">Скидки на такси от компании «Таксопарк Арама» предлагает скидки сотрудникам компании                                        
+                                                        </div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</div>  
+                                                    </div>    
+                                                    <div class="card__info info">
+                                                        <div class="info__texts">
+                                                            <span class="info__text info__date text--bottom-block card__texts">
+                                                                04.02.2020
+                                                            </span>
+                                                            <span class="info__text info__post-text text--bottom-block card__texts">
+                                                                Завершено
+                                                            </span>
+                                                        </div>
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>
+                                        <li class="cards__item cards__item--wide">  
+                                            <article class="card card--wide card--wide-right"> 
+                                                <a href="#" class="card__link"></a>                                                                                        
+                                                <div class="card__favorite favorite" data-tippy-content="Добавить в избранное">
+                                                    <svg class="favorite__star icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="favorite__star favorite__star-fill icon card__texts">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill "></use>
+                                                    </svg>                                        
+                                                </div>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <img class="card__image-pic" src="/public/images/actions/3.jpg">
+                
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__activity activity">
+                                                        <ul class="activity__list">
+                                                            <li class="activity__item  text--blue">Экскурсии</li>
+                                                            <li class="activity__item  text--blue">ОАО «Спутник Москвича»</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="card__text text-block">
+                                                        <div class="card__texts card__texts-title text-block__text text-block__text--title title--block">Экскурсии с большими скидками                                       
+                                                        </div> 
+                                                        <div class="card__texts card__texts-small text-block__text text-block__text--small text--gray">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой к...</div>  
+                                                    </div>    
+                
+                                                    <div class="card__info info">
+                                                        <div class="info__texts">
+                                                            <span class="info__text info__date text--bottom-block card__texts">
+                                                                04.02.2020
+                                                            </span>
+                                                            <span class="info__text info__post-text text--bottom-block card__texts">
+                                                                Предложение активно
+                                                            </span>
+                                                        </div>
+                                                        <div class="info__reactions">
+                                                            <div class="info__reaction info__reaction--like ">
+                                                                <svg class="icon info__reaction-pic info__reaction--like-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">123</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--comment">
+                                                                <svg class="icon info__reaction-pic info__reaction--comment-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">76</span>
+                                                            </div>
+                                                            <div class="info__reaction info__reaction--watch">
+                                                                <svg class="icon  info__reaction-pic info__reaction--watch-pic card__texts">
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
+                                                                </svg>
+                                                                <span class="info__text text--bottom-block card__texts">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>                            
+                                        </li>
+                                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="tabs__button button button--covered button--blue button--iconed button--right">
+                                <span class="button__text">Смотреть еще</span>
+                                <span class="button__icon">
+                                    <svg class="icon button__icon-pic">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>              
+                    </section>
+            </div>
+        </main>
+    </div>
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__row">
+
+                <div class="footer__col footer__col--social">
+                    <div class="footer__social social"> 
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://www.youtube.com/" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-you-tube"></use>
+                                    </svg>                                    
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>                                    
+                                </a>
+                            </li>                      
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--menu"> 
+                    <div class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--logotip"> 
+                    <div class="footer__logotip logotip">
+                        <a href="main_page.html" class="logotip__icon">   
+                            <img class="logotip__icon-pic" src="/public/images/icons/logo.png">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    <script src="/public/js/script.js"></script>
+</body>
+</html>

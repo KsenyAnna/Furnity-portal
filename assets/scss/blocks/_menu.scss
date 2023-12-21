@@ -1,0 +1,42 @@
+.menu {
+    $footer-padding: 20px;
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+
+        @media #{$screen-tablet} {
+            flex-wrap: nowrap;
+        }
+
+    }
+
+    &__item {
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: rem($footer-padding);
+            
+            @media #{$screen-tablet} {
+                margin: 0;
+            }        
+        }
+
+        @media #{$screen-tablet} {
+            width: auto;
+            
+            margin: 0;
+
+            &:not(:last-child) {
+                padding-right: rem(30px);
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.error {
+    display: block;
+
+    font-size: rem(10px);
+    line-height: rem($line-height-mini);
+
+    color: $carnation;
+
+    &:focus {
+        border-color: $carnation;
+    }
+
+    &:invalid {
+        border-color: $carnation !important;
+    }
+
+    + .select2 {
+        .select2-selection--single {
+                border-color: $carnation !important;
+        }       
+    }
+}

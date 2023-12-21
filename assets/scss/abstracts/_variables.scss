@@ -1,0 +1,136 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+$white: #ffffff;
+$black: #000000;
+
+$bunker: #121920;
+$slate-gray: #768298;
+$heather: #bbc4d6;
+$wild-blue-yonder: #6680ae;
+$athens-gray: #ebebf1;
+$athens-gray2: #f4f3f6;
+$curious-blue: #34aadd;
+$tapestry: #a7507b;
+$cerise-red: #dc2c53;
+$carnation: #f95a59;
+$red-orange: #ff3332;
+$alabaster: #fafafa;
+$outer-space: #202f2f;
+$blue-haze: #c0c8db;
+$picton-blue: #37a7df;
+$mirage: #14142c;
+$tundora: #4b4b4b;
+$polar: #f7fAfd;
+$golden-grass: #dc971f;
+$tiber: #0a2b37;
+$daintree: #011c28;
+$salt-box: #69676d;
+$casal: #265e6b;
+$alto: #d9d9d9;
+$tuna: #3a3a43;
+$brick-red: #d82f49;
+
+$color-text: $bunker;
+$color-text-inverse: $white;
+$background-color: $alabaster;
+$background-color-light: $slate-gray;
+
+/**
+* Fonts
+*/
+$font-size-base: 16px;
+
+$font-path: "/public/fonts";
+$font-family-default: sans-serif;
+$font-family-custom: "Roboto";
+
+$font-family: $font-family-custom, $font-family-default;
+
+$font-size-miniature: 12px;
+$font-size-tiny: 14px;
+$font-size-small: 16px;
+$font-size-average: 18px;
+$font-size-middle: 20px;
+$font-size-medium: 24px;
+$font-size-large: 30px;
+$font-size-huge: 36px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-large: 700;
+
+$line-height-mini: 16px;
+$line-height-miniature: 19px;
+$line-height-tiny: 24px;
+$line-height-small: 26px;
+$line-height-medium: 29px;
+$line-height-large: 38px;
+$line-height-big: 39px;
+$line-height-huge: 47px;
+
+$line-height-percent-large: 167%;
+$line-height-percent-big: 150%;
+$line-height-percent-huge: 130%;
+$line-height-percent-medium: 127%;
+
+/**
+* Breakpoints
+*/
+$screen-desktop: '(min-width: 1440px)';
+$screen-tablet: '(min-width: 768px)';
+
+/**
+* Layout
+*/
+$weight-container: 1240px;
+$gap-container: 20px;
+
+/**
+* Sizes
+*/
+$height-header-desktop: 80px;
+$height-header-mobile: 105px;
+
+$size-normal: 50px;
+$size-medium: 40px;
+$size-small: 29px;
+$size-mini: 24px;
+
+/**
+* Transitions and Animations
+*/
+$transition-duration-fast: 100ms;
+$transition-duration: 300ms;
+$transition-function: ease-in-out;
+
+/**
+* Radius
+*/
+$border-radius: 8px;
+$border-radius-medium: 5px;
+$border-radius-mini: 2px;
+
+/**
+* Box-shadows
+*/
+$box-shadow: 0px rem(3px) rem(10px) rgba($black, .05); 
+
+$box-shadow-double: 0px rem(12px) rem(40px) rgba($black, .03),
+                    0px rem(3px) rem(10px) rgba(#a4a4a4, .03);
+
+$box-shadow-cards: 0px rem(3px) rem(40px) rgba($black, .01),
+                   0px 0px rem(41px)  rgba(#a4a4a4, .03);
+
+/**
+* Z-indexes
+*/
+$z-index-above: 99;
+$z-index-header: 50;
+$z-index-aside-medium: 40;
+$z-index-aside-block: 30;
+$z-index-aside-substrate: 20;
+$z-index-aside-small: 1;

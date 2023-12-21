@@ -1,0 +1,39 @@
+.text {
+    font-size: rem($font-size-tiny);
+    line-height: $line-height-percent-large;
+    color: $color-text;
+
+    margin:0;
+    padding: 0;
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-small);
+    }
+
+    &--medium {
+        font-size: rem($font-size-tiny);
+        line-height: $line-height-percent-large;
+        font-weight: $font-weight-regular;
+        color: $color-text;
+    }
+
+    &--gray {
+        font-size: rem($font-size-tiny);
+        color: $slate-gray;  
+        line-height: $line-height-percent-big;
+    } 
+
+    &--blue{
+        font-size: rem($font-size-miniature);
+        color: $curious-blue;
+    }
+
+    &--bottom-block {
+        font-size: rem($font-size-miniature);
+        color: $slate-gray; 
+    }
+
+    &--small {
+        font-size: rem($font-size-miniature);
+    }
+}

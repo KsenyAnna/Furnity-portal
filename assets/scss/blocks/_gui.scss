@@ -1,0 +1,18 @@
+.gui {
+    &__block {
+        position: relative;
+
+        margin-bottom: rem(15px);
+
+        &--icon {
+            display: inline-block;
+            
+            height: rem(24px);
+            width: rem(24px);        
+        }
+    }
+
+    &__item {
+        margin-bottom: rem(15px);
+    }
+}

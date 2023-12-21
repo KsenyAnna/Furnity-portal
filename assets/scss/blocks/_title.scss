@@ -1,0 +1,32 @@
+.title {
+    @include title;
+
+    &--h1 {
+        font-size: rem($font-size-large);       
+        line-height: $line-height-percent-huge;
+
+        @media #{$screen-tablet} {
+            font-size: rem($font-size-huge);
+        }
+    }
+    &--h2 {
+        font-size: rem($font-size-medium);
+        
+        @media #{$screen-tablet} {
+            font-size: rem($font-size-large);
+        }
+    }
+
+    &--h3 {
+        font-size: rem($font-size-middle);
+        font-weight: $font-weight-medium; 
+
+        @media #{$screen-tablet} {
+            font-size: rem($font-size-medium);
+        }    
+    }
+
+    &--block {
+        @include title-block; 
+    }
+}

@@ -1,0 +1,75 @@
+.small-card {    
+    box-shadow: 0 rem(4px) rem(12px) 0 rgba($black, .1);
+
+    background-color: $white;
+
+    padding-top: rem(16px);
+    padding-left: rem(16px);
+
+    border-radius: rem(5px);
+    
+    &--slide {
+        width: rem(282px);
+        height: rem(150px);
+    }
+
+    &__titles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: rem(24px);
+
+        color: $bunker;
+        
+        margin-right: rem(16px);
+        margin-bottom: rem(10px);
+    }
+
+    &__title {
+        @include hidden-text;
+
+        max-width: rem(206px);
+
+        font-size: rem($font-size-small);
+        font-weight: $font-weight-medium;
+        line-height: $line-height-percent-big;
+    }
+
+    &__icon {
+        width: rem(24px);
+        height: rem(24px);
+        
+        &-warning {
+            color: $red-orange;
+        }
+
+        &-question {
+            color: $wild-blue-yonder;
+        }
+
+        &-info {
+            color: $curious-blue;
+        }
+    }
+
+    &__text {
+        @include hidden-text;
+        -webkit-line-clamp: 3;
+
+        font-size: rem($font-size-tiny);
+        font-weight: $font-weight-regular;
+        line-height: 120%;
+
+        height: rem(51px);
+
+        margin-right: rem(16px);
+        margin-bottom: rem(20px);
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

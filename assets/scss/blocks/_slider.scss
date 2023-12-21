@@ -1,0 +1,117 @@
+.slider {
+    &__box {
+        position: relative;
+    }
+
+    .swiper {
+        &-slide {
+            width: auto;
+            opacity: .5;
+
+            &-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        height: rem(9px);
+
+        &-bullet {
+            height: rem(9px);
+            width: rem(9px);
+            
+            margin: 0 rem(2.5px) !important;
+
+            &-active {
+                background-color: $tapestry;
+            }
+        }
+    }
+
+    &__buttons {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+
+        display: none;
+
+        height: 0;
+        width: 100%;
+        max-width: rem($weight-container + 2 * $gap-container); 
+
+        margin: 0 auto 0; 
+        padding-left: rem($gap-container); 
+        padding-right: rem($gap-container); 
+
+        @media #{$screen-tablet} {
+            display: block;
+        }
+
+        &-item {
+            width: auto;
+            height: auto;
+
+            &::after {
+                content: "";
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: rem(36px);
+        height: rem(36px);
+
+        background-color: $polar;
+        border-color: $polar;
+
+        box-shadow: 0 rem(4px) rem(12px) 0 rgba($casal, .25);
+
+        @media #{$screen-desktop} {
+            width: rem(48px);
+            height: rem(48px);
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $golden-grass;
+            border-color: $golden-grass;
+        }
+
+        &--next & {
+            &-icon {
+                transform: rotate(180deg);
+            }
+        }
+        &-icon {
+            width: rem(26px);
+            height: rem(26px);
+
+            color: rgba($tiber, .8);
+
+            @media #{$screen-desktop} {
+                width: rem(36px);
+                height: rem(36px);    
+            }
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }    
+
+        }
+    }
+    
+    &__pagination {
+        display: none;
+
+        @media #{$screen-desktop} {
+            display: block;
+        }
+    }
+}

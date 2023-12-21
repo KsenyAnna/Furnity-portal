@@ -1,0 +1,134 @@
+.input {
+    $height-input: 50px;
+    $height-input-small: 40px;
+    $height-input-big: 100px;
+
+    position: relative;
+
+    &--iconed {
+        font-size: rem(10px);
+    }
+
+    &--textarea & {
+        &__control {
+            line-height: rem($line-height-mini);
+
+            height: rem($height-input-big);
+            padding: rem(17px) rem(20px);
+
+            resize: none;
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                background: transparent;
+            }
+        }
+    }
+
+    &--small {
+        height: rem(40px);
+    }
+    
+    &--small & {
+        &__control {
+            position: relative;
+
+            height: rem($height-input-small);
+        }
+    }
+
+    &--search & {
+        height: rem(40px);
+
+        &__button {
+
+            position: absolute;
+            top: 50%;
+            left: rem(20px);
+            transform: translateY(-50%);
+
+            z-index: $z-index-aside-block;
+
+            @media #{$screen-tablet} {
+                left: rem(10px);
+            }    
+        }    
+
+        &__control {
+
+            position: absolute;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            width: 100%;
+
+            border: 0;
+
+            padding-left: rem(49px); 
+
+            @media #{$screen-tablet} {
+                border: rem(1px) solid $athens-gray;
+                width: 100%;
+
+                padding-left: rem(39px);
+            }
+        }
+    }
+
+    &__control {
+        font-size: rem($font-size-tiny) !important;
+        line-height: rem(16px);
+
+        display: block;
+        
+        width: 100%;
+        height: rem(50px);
+        padding-right: rem(20px);
+        padding-left: rem(20px);
+
+        transition: color $transition-duration $transition-function,
+        border-color $transition-duration $transition-function,
+        background-color $transition-duration $transition-function;
+
+        color: $color-text;
+        border: rem(1px) solid $athens-gray;
+        border-radius: rem($border-radius-medium);
+        background-color: $white;
+        box-shadow: none;
+
+        &:focus {
+            border-color: $slate-gray;
+            outline: none;
+        }
+
+        &:disabled {
+            background-color: $athens-gray;
+        }
+
+        &::-webkit-input-placeholder { 
+            font-weight: $font-weight-regular;
+
+            color: $heather; 
+        }
+
+        &--error {
+            border-color: $carnation;
+
+            &:focus {
+                border-color: $carnation;
+            }
+        }
+
+        &-error {
+            font-size: rem(10px);
+            line-height: rem($line-height-mini);
+
+            color: $carnation;
+        }
+    }
+}

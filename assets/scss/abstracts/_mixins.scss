@@ -1,0 +1,273 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    } @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+@mixin all-document {
+    box-sizing: border-box;
+    
+    -webkit-tap-highlight-color: transparent;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+@mixin html {
+    font-family: $font-family;
+    font-size: 100%;
+
+    color: $color-text;
+    background-color: $background-color;
+}
+
+@mixin fonts {
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-regular;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-small;
+    }
+}
+
+@mixin body {
+    @include fonts;
+
+    line-height: $line-height-percent-large;
+
+    text-rendering: optimizeLegibility;
+
+    &:not([class]) {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Текст
+
+@mixin title {
+    font-size: rem($font-size-middle);
+    line-height: $line-height-percent-medium;
+    font-weight: $font-weight-medium;
+
+    margin: 0;  
+    padding: 0;
+}
+
+@mixin title-block {
+    @include title;
+    
+    font-size: rem($font-size-small);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-percent-big;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-average;
+    }
+}
+
+@mixin hidden-text {
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+//Скрыть блок
+@mixin hidden-element {
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+
+    width: rem(1px);
+    height: rem(1px);
+    margin: rem(-1px);
+}
+
+// Сброс списков
+@mixin list-reset {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    list-style: none;
+}
+
+// Списки
+@mixin ol {
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-percent-large;
+
+    counter-reset: my-counter;
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-small);
+    }  
+    
+    &:not([class]) {
+        li {
+            margin: rem(10px) 0;
+        }
+
+        & > li {
+            &:before {
+                content: counter(my-counter) ".";
+                counter-increment: my-counter;
+                color: $cerise-red;
+                padding-right: 5px;
+                }
+                & > ol {
+                    counter-reset: my-sub-counter;
+                    & > li {
+                        &::before {
+                        content: counter(my-counter)"."counter(my-sub-counter);
+                        counter-increment: my-sub-counter;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }  
+    }  
+}
+
+@mixin ul {
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-percent-large;
+
+    list-style-type: none;
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-small);
+    }    
+    
+    &:not([class]) {
+        li {
+            margin: rem(10px) 0;
+        }
+
+        li:before {
+            content: "•";
+            
+            color: $cerise-red;         
+
+            padding-right: rem(10px); 
+        }
+    }
+}
+
+@mixin red-line {
+    &::before {
+        content: "";
+        
+        position: absolute;
+        display: block;
+        width: rem(5px);
+        height: 100%;
+        background-color: $cerise-red;
+        top: 0;
+        left: 0;
+        border-radius: rem(5px) 0 0 rem(5px);
+    }
+}
+
+// Цитата 
+
+@mixin blockquote {
+    @include fonts;
+
+    padding: rem(20px) rem(25px) rem(20px) rem(30px);
+
+    position: relative;
+    z-index: $z-index-aside-substrate;
+
+    margin: 0;
+    margin: 0;
+    
+    background-color: $alabaster;
+
+    display: block;
+
+    @include red-line;    
+}
+
+// Ссылки
+@mixin href {
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-percent-medium;
+
+    color: $curious-blue;
+
+    cursor: pointer;
+    transition: $transition-duration $transition-function;
+                
+    &:hover {
+        color: $color-text;
+    }  
+    &:not([class]) {
+        text-decoration: none;
+    }
+}
+
+// Изображения
+@mixin img {
+    display: block;
+
+    width: 100%;
+
+    border-radius: rem(2px);
+
+    &:not([class]) {
+        margin: rem(20px) 0;
+    }
+}
+
+@mixin block-images-pos {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+// Центровка элемента по вертикали
+@mixin centerY {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+// Центровка элемента по горизонтали
+@mixin centerX {
+    position: absolute;
+
+    right: 50%;
+
+    transform: translateX(-50%);
+}
+
+// Центровка элемента по центру
+
+@mixin center {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    
+    transform: translateY(-50%) translateX(-50%);
+}

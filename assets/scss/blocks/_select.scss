@@ -1,0 +1,165 @@
+.select {      
+    position: relative;
+    
+    .select2-container {
+        .select2-selection {
+            &::after {
+                position: absolute;
+                top: 0;
+                right: rem(10px);
+                bottom: 0;
+
+                display: block;
+
+                width: rem(24px);
+                height: rem(24px);
+
+                margin-top: auto;
+                margin-bottom: auto;
+
+                content: "";
+                
+                transition: transform $transition-duration $transition-function;
+
+                background-image: url(/public/images/icons/arrow-down.svg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+            }
+        }
+    }
+    
+    .select2-container--default {
+        .select2-selection--single {
+            height: rem(50px);
+
+            background-color: $white;
+            border: rem(1px) solid $athens-gray;
+
+            .select2-selection__placeholder {
+                font-size: rem($font-size-tiny);
+                line-height: rem(15px);
+
+                display: block;
+                overflow: hidden;
+
+                white-space: nowrap;
+                text-overflow: ellipsis; 
+                
+                color: $heather;
+            }
+
+            .select2-selection__rendered {
+                font-size: rem($font-size-tiny);
+                line-height: rem(15px);
+
+                padding: rem(17px) rem(34px) rem(17px) rem(20px);
+
+                color: $bunker;
+            }
+
+            .select2-selection__arrow {
+                display: none;
+            }            
+        }
+    }
+
+    .select2-search--dropdown {
+        display: none;
+    }
+
+    .select2-dropdown {
+        background-color: $white;
+        border: rem(1px) solid $slate-gray;
+    } 
+
+    .select2-results > .select2-results__options {
+        max-height: rem(155px);
+
+        color: $bunker;
+    }
+
+    
+    .select2-results__option {
+        font-size: rem($font-size-tiny);
+        line-height: rem(15px);
+
+        padding: rem(18px) rem(20px);
+
+        &[aria-selected=true],
+        &-highlighted[aria-selected] {
+            color: $bunker;
+
+            background-color: rgba($slate-gray, .05);
+        }
+    }
+
+    .select2-results {
+        padding: rem(5px) rem(5px) rem(4px) 0;        
+    }
+
+    .select2-results__option--selected {
+        font-weight: $font-weight-medium;
+
+        color: $wild-blue-yonder !important;
+        background-color: transparent;
+    }
+          
+    .select2-container {
+        width: 100% !important;
+
+        &.select2-container--disabled {
+            .select2-selection--single {
+                background-color: $athens-gray;
+            }
+            .select2-selection {
+                &::after {
+                    display: none;
+                }
+            }
+        } 
+
+        &.select2-container--focus {
+            .select2-selection--single {
+                &:focus {
+                    border-color: $slate-gray;
+                    outline: none;                
+                }
+            }
+        }
+
+        &.select2-container--open {
+            .select2-selection {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .select2-selection--single {
+                border: rem(1px) solid $slate-gray !important;
+                border-bottom: 0 !important;
+            }
+        }
+
+        .select2-results__options {
+            &::-webkit-scrollbar {
+                width: rem(5px);  
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: $athens-gray;
+                
+                border-right: 1px solid $white;
+                border-left: 1px solid $white;
+
+                border-radius: rem(2px);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $curious-blue;
+
+                border-radius: rem(10px);
+            }
+        }                    
+    }
+}

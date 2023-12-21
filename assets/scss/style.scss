@@ -1,0 +1,111 @@
+/**
+* Vendors
+*/
+@import "~normalize.css";
+@import '~swiper/css/swiper.min.css';
+@import '~select2/dist/css/select2.css';
+@import '~tippy.js/dist/tippy.css';
+@import '~tippy.js/themes/light.css';
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+/**
+* Abstracts
+*/
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+/**
+* Base
+*/
+@import "base/fonts";
+@import "base/generic";
+
+/*
+* Components
+*/
+@import "blocks/header";
+@import "blocks/footer";
+
+@import "blocks/container";
+@import "blocks/page";
+
+@import "blocks/gui";
+@import "blocks/page-with-menu";
+
+@import "blocks/title";
+@import "blocks/text";
+@import "blocks/list";
+@import "blocks/note";
+
+@import "blocks/icon";
+@import "blocks/button";
+
+@import "blocks/input";
+@import "blocks/form";
+
+@import "blocks/checkbox";
+@import "blocks/checkboxes";
+
+@import "blocks/radiobuttons";
+@import "blocks/radiobutton";
+
+@import "blocks/profile";
+@import "blocks/logo";
+
+@import "blocks/social";
+@import "blocks/logotip";
+@import "blocks/menu";
+
+@import "blocks/breadcrumbs";
+
+@import "blocks/cards";
+@import "blocks/card";
+
+@import "blocks/activity";
+@import "blocks/text-block";
+@import "blocks/info";
+
+@import "blocks/favorite";
+
+@import "blocks/tabs";
+
+@import "blocks/small-cards";
+@import "blocks/small-card";
+
+@import "blocks/medium-block";
+
+
+@import "blocks/list-menu";
+@import "blocks/background";
+
+@import "blocks/select";
+
+@import "blocks/review";
+@import "blocks/slider";
+
+@import "blocks/info-cards";
+
+@import "blocks/spoiler";
+
+@import "blocks/tippy-box";
+
+@import "blocks/error";
+
+@import "blocks/modal";
+
+// Страницы html
+@import "blocks/main-page";
+@import "blocks/detail-page";
+@import "blocks/editing-profile";
+@import "blocks/faq-page";
+
+
+
+
+
+
+
+
+
+

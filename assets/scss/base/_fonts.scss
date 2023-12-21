@@ -1,0 +1,17 @@
+@font-face {
+    $font-name: "#{$font-family-custom}-Medium";
+    font-family: $font-family-custom;
+    font-weight: $font-weight-medium;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+         url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}
+
+@font-face {
+    $font-name: "#{$font-family-custom}-Regular";
+    font-family: $font-family-custom;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+         url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}

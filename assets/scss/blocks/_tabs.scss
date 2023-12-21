@@ -1,0 +1,132 @@
+.tabs {
+    transition: $transition-duration $transition-function;
+
+    &--blue & {
+        &__item {
+            padding: rem(10px) rem(20px);
+            
+            color: $curious-blue;
+            
+            border-radius: rem(4px);
+
+            background-color: $athens-gray;
+
+            &:not(:last-child) {
+                margin-right: rem(19px);
+            }            
+            
+            &--active {
+                color: $white;
+                background-color: $curious-blue;
+            }
+        }
+    }
+
+    &--red & {
+        &__items {
+            position: relative;
+            
+            &::after {
+                position: absolute;
+
+                display: block;
+
+                content: "";
+
+                bottom: 0;
+                left: 0;
+
+                height: rem(1px);
+                width: 100%;
+
+                background-color: $heather;
+            }
+        }
+
+        &__item {            
+            position: relative;
+
+            padding-bottom: rem(20px);
+
+            color: $heather;
+
+            &:not(:last-child) {
+                margin-right: rem(50px);
+            }
+            
+            &:hover {
+                transition: $transition-duration $transition-function;
+
+                color: $bunker;
+            }
+
+            &--active {
+                color: $bunker;
+
+                &::after {
+                    position: absolute;
+
+                    display: block;
+
+                    content: "";
+
+                    bottom: 0;
+                    left: 0;
+
+                    height: rem(4px);
+                    width: 100%;
+
+                    background-color: $cerise-red;
+
+                    border-radius: rem(4px) rem(4px) 0 0;
+
+                    z-index: $z-index-aside-substrate;
+                }
+            }
+        }        
+    }
+
+    &__items {
+        margin-bottom: rem(30px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(50px);
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        width: fit-content;
+
+        padding-top: rem(4px);
+        padding-right: rem(21px);
+    }
+
+    &__item {
+        font-size: rem($font-size-small);
+        font-weight: $font-weight-medium;
+        line-height: $line-height-percent-huge;
+
+        cursor: pointer;
+    }
+
+    &__block {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__button {
+        margin: 0px auto;
+        margin-top: rem(20px);
+
+        @media #{$screen-tablet} {
+            margin: 0px auto;
+            margin-top: rem(31px);
+        }
+    }
+}

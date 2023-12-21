@@ -1,0 +1,26 @@
+.main-page {
+    &__slider {
+        margin-bottom: rem(40px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(50px);
+        }
+
+        @media #{$screen-desktop} {
+            margin-bottom: rem(31px);
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(20px);
+    }
+
+    &__block {
+        margin-bottom: rem(14px);
+
+        @media #{$screen-desktop} {
+            width: rem(621px);
+            margin-bottom: rem(40px);
+        }    
+    }
+}
